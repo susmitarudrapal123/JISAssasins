@@ -1,7 +1,8 @@
-#qs no-2 by susita rudra pl
-lst = []
-num = int(input("How many numbers:"))
-for n in range(num):
-    numbers = int(input("Enter number"))
-    lst.append(numbers)
-print("Maximum element in the list is :", max(lst),"\nMinimum element in the list is :", min(lst))                    
+#qu no-7 by susmita rudra pal
+n=int(input("Enter a number:"))
+tot=0
+while(n>0):
+    dig=n%10
+    tot=tot+dig
+    n=n//10
+print("The total sum of digits is:",tot)
