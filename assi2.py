@@ -1,14 +1,17 @@
-#qs no-10 by susmita rudra pal
-print("Enter 'x' for exit.")
-string = input("Enter any string to remove all vowels from it: ")
-if string == 'x':
-    exit();
-else:
-    newstr = string;
-    print("\nRemoving vowels from the given string...");
-    vowels = ('a', 'e', 'i', 'o', 'u');
-    for x in string.lower():
-        if x in vowels:
-            newstr = newstr.replace(x,"");
-    print("New string after successfully removed all the vowels:");
-    print(newstr);
+#qu no-4 by susmita rudra pal
+num = int(input("How many figures :"))
+storage = []
+result = []
+
+# Creating an array of users numbers
+for i in range(1,num+1):
+    a = int(input("Enter value" + str(i) + ":"))
+    storage.append(a) # user enter
+
+# Sorting the array
+for m in range(len(storage)):
+    b = min(storage)
+    storage.remove(b)
+result.append(b) # user get
+j =  ' '.join(str(i) for i in result)
+print(j)
