@@ -1,3 +1,4 @@
+#qs no-2 by susita rudra pl
 lst = []
 num = int(input("How many numbers:"))
 for n in range(num):
