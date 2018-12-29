@@ -1,8 +1,14 @@
-#qu no-7 by susmita rudra pal
-n=int(input("Enter a number:"))
-tot=0
-while(n>0):
-    dig=n%10
-    tot=tot+dig
-    n=n//10
-print("The total sum of digits is:",tot)
+#qs no-10 by susmita rudra pal
+print("Enter 'x' for exit.")
+string = input("Enter any string to remove all vowels from it: ")
+if string == 'x':
+    exit();
+else:
+    newstr = string;
+    print("\nRemoving vowels from the given string...");
+    vowels = ('a', 'e', 'i', 'o', 'u');
+    for x in string.lower():
+        if x in vowels:
+            newstr = newstr.replace(x,"");
+    print("New string after successfully removed all the vowels:");
+    print(newstr);
